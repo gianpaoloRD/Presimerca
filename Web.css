@@ -1,3 +1,70 @@
-h1, h2 {
-    font-family: 'Oswald', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
 }
+li, a, button {
+    font-family: "Zillo Slab", serif;
+    font-weight: 300;
+    color: azure;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.top_nav {
+    list-style: none;
+}
+.top_nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.top_nav li a {
+    transition: all 0.3s ease 0s;
+}
+.top_nav li a:hover{
+    color: rgb(255, 208, 0);
+}
+
+.login_button {
+    padding: 9px 25px;
+    background-color: rgba();
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #808080;
+  }
+.topnav .search-container {
+    float: center;
+  }
+
+
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
