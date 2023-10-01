@@ -1,0 +1,24 @@
+
+
+div.maindiv{       
+    overflow: hidden;
+}
+
+div.scrollmenu {
+  overflow-x: scroll;
+  background-color: #333;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+
+}

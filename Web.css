@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500&display=swap');
 
 *{
-    
     margin: 0;
     padding: 0;
-    background-color: #24252A;
 }
+
+html {
+    background-color: #FFFFFA;
+}
+
 li, a, button {
     font-family: "Zillo Slab", serif;
     font-weight: 300;
-    color: azure;
+    color: #FFFFFA;
     text-decoration: none;
 }
 
@@ -17,13 +21,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    background-color: #2E282A;}
 
 .logo {
+    color: #2e282a;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 .top_nav {
+    background-color: ;
     list-style: none;
 }
 .top_nav li {
@@ -55,7 +62,7 @@ header {
     padding: 6px;
     margin-top: 8px;
     font-size: 17px;
-    border: none;
+    border-radius: 0.75rem;
   }
   
   .topnav .search-container button {
@@ -63,8 +70,28 @@ header {
     padding: 6px 10px;
     margin-top: 8px;
     margin-right: 16px;
-    background: #ddd;
     font-size: 17px;
     border: none;
     cursor: pointer;
   }
+  
+  button {
+    margin: 0.2rem;
+    padding: 0.3rem 1rem;
+    background-color: rgba(23, 190, 187,1);
+    color: #FFFFFA;
+    border: none;
+    border-radius: 0.45rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+
+  button:hover {
+    background-color: rgba(23, 190, 187,0.8);
+
+  }
+  .indice0 {
+    background-color: #FFFFFA;
+    list-style: none;
+    padding-bottom: 0.20rem;
+}
