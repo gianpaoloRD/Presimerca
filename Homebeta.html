@@ -1,53 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 
     <meta charset="UTF-8">
     <title>Presimerca Import</title>
     <link rel="stylesheet" href="top_nav_bar.css">
+    <link rel="stylesheet" href="sidebar.css">
 
 </head>
 
 <body>
+    
+    <div>
 
-    <section>
+        <header id="topnavbar" class="top_nav">
 
-        <header>
-
-            <a href="#Home">Presimerca</a>
-            <a href="#"><button>login</button></a>
+            <div class="logo"> <a href="#Home">Presimerca</a> </div>
+            <div class="perfil_btn"><a  href="#Home">Perfil</a></div>
+            <div class="carito_btn"><a  href="#Home">Carrito</a></div>
+            <div class="login_btn" ><a href="#"><button>Login/Subcribete!</button></a></div>
 
         </header>
 
-    </section>
+    </div>
     
-    <header>
+    <div id="bottomnavbar" class="bottom_nav">
 
-        <nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">Hogar</a>
+            <a href="#">lozas</a>
+            <a href="#">Plasticos</a>
+            <a href="#">Jugetes</a>
+        </div>
 
-            <ul > 
-                <li><a href="#Home">Hogar</a></li>
-                <li><a href="#Home">Belleza</a></li>
-                <li><a href="#Home">Jugetes</a></li>
-                <li><a href="#Home">Losas</a></li>
-                <li><a href="#Home">Plasticos</a></li>
-            </ul>
-
-        </nav>
+        <div >
+                <button class="openbtn" onclick="openNav()">☰</button> 
+        </div>
 
         <div class="search-container">
 
             <form action="/action_page.php">
 
-                <input type="text" placeholder="Buscar.." name="search">
-                <button type="submit"><i class="search_bar"></i>Buscar</button>
+                <input type="text" placeholder="Buscar.." name="search_bar">
+                <button type="submit"><i class="search_btn"></i>Buscar</button>
                 
             </form>
 
         </div>
 
-    </header>
+    </div>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("topnavbar").style.marginLeft = "250px";
+          document.getElementById("bottomnavbar").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("topnavbar").style.marginLeft = "0";
+          document.getElementById("bottomnavbar").style.marginLeft= "0";
+        }
+        </script>
 
 </body>
 
