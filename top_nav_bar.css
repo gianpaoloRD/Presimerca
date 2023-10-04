@@ -108,5 +108,15 @@
 
 .bottom_nav {
     background-color: #ef3e36;
+
+    display: flex;
+    
 }
 
+.categorias_btn {
+    flex: 200px;
+}
+
+.search-container {
+    
+}
