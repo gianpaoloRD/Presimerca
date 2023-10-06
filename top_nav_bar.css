@@ -113,10 +113,14 @@
     
 }
 
+.search_bar {
+    
+}
+
 .categorias_btn {
     flex: 200px;
 }
 
 .search-container {
-    
+    width: 5000px;
 }
