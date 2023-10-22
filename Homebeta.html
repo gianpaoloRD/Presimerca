@@ -7,6 +7,7 @@
     <title>Presimerca Import</title>
     <link rel="stylesheet" href="top_nav_bar.css">
     <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="Web.css">
 
 </head>
 
@@ -52,20 +53,52 @@
 
     </div>
 
-    <script>
-        function openNav() {
-          document.getElementById("mySidebar").style.width = "250px";
-          document.getElementById("topnavbar").style.marginLeft = "250px";
-          document.getElementById("bottomnavbar").style.marginLeft = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("topnavbar").style.marginLeft = "0";
-          document.getElementById("bottomnavbar").style.marginLeft= "0";
-        }
-        </script>
+    <div id="cajaOfertas">
+
+        <div class="button-container">
+
+            <button id="slideLeft" type="button"></button>
+            <div id='scrolly'>
+                <img src='img/car.jpg'></img>
+                <img src='img/car.jpg'></img>
+                <img src='img/car.jpg'></img>
+                <img src='img/car.jpg'></img>
+                <img src='img/car.jpg'></img>
+                <img src='img/car.jpg'></img>
+            </div>
+            <button id="slideRight" type="button"></button>
+
+
+        </div>
+
+
+    </div>
+
 
 </body>
 
 </html>
+<script>
+
+    const buttonRight = document.getElementById('slideRight');
+    const buttonLeft = document.getElementById('slideLeft');
+
+    buttonRight.onclick = function () {
+        document.getElementById('scrolly').scrollLeft += 100;
+    };
+    buttonLeft.onclick = function () {
+        document.getElementById('scrolly').scrollLeft -= 100;
+    };
+
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("topnavbar").style.marginLeft = "250px";
+        document.getElementById("bottomnavbar").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("topnavbar").style.marginLeft = "0";
+        document.getElementById("bottomnavbar").style.marginLeft= "0";
+    }
+</script>

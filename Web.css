@@ -1,97 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
+#cajaOfertas{
+    margin: 10px;
+}
+#scrolly{
+    background: #fff;
+    padding: 8px 8px 8px 8px;
+    margin: 12px 0px 5px 0px;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0);
+    border: 1px solid #dadce0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    overflow: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
 
-html {
-    background-color: #FFFFFA;
+img{
+    width: 300px;
+    height: 150px;
+    margin: 20px 10px;
+    display: inline;
 }
-
-li, a, button {
-    font-family: "Zillo Slab", serif;
-    font-weight: 300;
-    color: #FFFFFA;
-    text-decoration: none;
-}
-
-header {
+.button-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2E282A;}
 
-.logo {
-    color: #2e282a;
-    cursor: pointer;
-    font-size: 2rem;
 }
-
-.top_nav {
-    background-color: ;
-    list-style: none;
-}
-.top_nav li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-.top_nav li a {
-    transition: all 0.3s ease 0s;
-}
-.top_nav li a:hover{
-    color: rgb(255, 208, 0);
-}
-
-.login_button {
-    padding: 9px 25px;
-    background-color: rgba();
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #808080;
-  }
-.topnav .search-container {
-    float: center;
-  }
-
-
-  .topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border-radius: 0.75rem;
-  }
-  
-  .topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
+#slideRight{
     border: none;
-    cursor: pointer;
-  }
-  
-  button {
-    margin: 0.2rem;
-    padding: 0.3rem 1rem;
-    background-color: rgba(23, 190, 187,1);
-    color: #FFFFFA;
+    background-color: orange;
+    padding: 12px 48px 12px 24px;
+    border-radius: 4px;
+    color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    margin-right: 10%;
+    margin-left: 1%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#slideLeft{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
     border: none;
-    border-radius: 0.45rem;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-
-  button:hover {
-    background-color: rgba(23, 190, 187,0.8);
-
-  }
-  .indice0 {
-    background-color: #FFFFFA;
-    list-style: none;
-    padding-bottom: 0.20rem;
+    background-color: orange;
+    padding: 12px 48px 12px 24px;
+    border-radius: 2px;
+    color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    margin-right: 1%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#cajaOfertas{
+    border-style: solid;
 }

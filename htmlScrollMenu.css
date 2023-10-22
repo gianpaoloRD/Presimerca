@@ -1,24 +1,29 @@
-
-
-div.maindiv{       
-    overflow: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
-div.scrollmenu {
-  overflow-x: scroll;
-  background-color: #333;
+#scrolly{
+  background: #fff;
+  padding: 8px 8px 8px 8px;
+  margin: 12px 0px 5px 0px;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0);
+  border: 1px solid #dadce0;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  overflow: auto;
   white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+img{
+  width: 300px;
+  height: 150px;
+  margin: 20px 10px;
+  display: inline;
+}
+.button-container {
+  display: flex;
 }
 
-div.scrollmenu a:hover {
-  background-color: #777;
-
-}
